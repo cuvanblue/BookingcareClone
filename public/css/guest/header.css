@@ -1,0 +1,208 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap');
+
+    body {
+        margin: 0;
+        font: 14px/1.5 'Montserrat', sans-serif;
+    }
+
+    .header {
+        position: relative;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .header-container {
+
+        width: 100%;
+        max-width: 1175px;
+        margin: 0 auto;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        font: 14px/1.5 'Montserrat', sans-serif;
+    }
+
+    .header-container .header-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .header-logo button {
+        width: 22px;
+        height: 22px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-right: 10px
+    }
+
+    button svg {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .header-logo a {
+        width: 160px;
+        height: 40px;
+    }
+
+    .header-container .header-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-nav .header-nav-link {
+        overflow: auto;
+        cursor: pointer;
+        margin-right: 30px;
+        color: #474747;
+    }
+
+    .header-nav-link h4 {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .header-nav-link p {
+        margin: 0;
+        margin-top: 5px;
+        font-size: 11px;
+    }
+
+    .header-support {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #45C3D2;
+        font-weight: 600;
+        margin-right: 15px;
+    }
+
+    .header-support .support-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-support .support-text span {
+        color: #969495;
+        margin-left: 5px;
+    }
+
+    .header .left-side-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .left-side-menu .back-ground {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+    .left-side-menu .menu-container {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 100vh;
+        overflow: auto;
+        background-color: white;
+        opacity: 1;
+
+    }
+
+    .menu-container::-webkit-scrollbar {
+        width: 0.3em;
+    }
+
+    .menu-container::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .menu-container::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+    }
+
+    .left-side-menu .menu-container p {
+        background-color: #F1F1F1;
+        width: 96%;
+        padding: 9px 0 9px 4%;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .left-side-menu .menu-container ul {
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .left-side-menu .menu-container ul li {
+        width: 100%;
+    }
+
+    .left-side-menu .menu-container ul li a {
+        display: flex;
+        width: 90%;
+        text-decoration: none;
+        border-bottom: 1px solid #eee;
+        color: #45C3D2;
+        font-size: 17px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px 4% 10px 6%;
+        font-weight: lighter;
+    }
+
+    .left-side-menu .menu-container ul li a img {
+        width: 35px;
+        height: 35px;
+        margin: 40px 20px 40px 0;
+    }
+
+    .header .search-specialist-box {
+        display: none;
+        width: 100%;
+        height: 96vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+
+    .header .search-doctor-box {
+        z-index: 3;
+        display: none;
+        width: 100%;
+        height: 96vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+
+    h4 {
+        font: 14px/1.5 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .header-nav {
+            display: none !important;
+        }
+    }

@@ -1,0 +1,355 @@
+.maindiv {
+
+    width: calc(100% -20px);
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.doctors-container {
+    width: 100%;
+    max-width: 1175px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.doctor-item {
+    width: 215px;
+    height: 200px;
+    display: block;
+    margin: 0 20px 20px 0;
+    text-decoration: none;
+}
+
+.doctor-image {
+    height: 120px;
+    width: 100%;
+    background-image: url("/doctorimage/default_avatar.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.p1 {
+    font-size: 16px;
+    color: rgb(40, 49, 63);
+    padding-top: 10px;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.doctor-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heade-maindiv {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+}
+
+.background-title {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    aspect-ratio: 4.8 / 1;
+    margin-bottom: 60px;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    overflow: auto;
+}
+
+.background-title img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    object-fit: cover;
+    color: transparent;
+}
+
+.topspace {
+    width: 100%;
+    aspect-ratio: 7.5;
+}
+
+.overview-container {
+    width: 95%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.overview-section-1 {
+    width: 100%;
+    height: 170px;
+    background-color: rgba(255, 255, 255, 0.80);
+}
+
+.nameandavatar {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nameandavatar img {
+    width: 115px;
+    height: 115px;
+    padding: 25px 25px 0 25px;
+}
+
+.nameandavatar .name {
+    display: inline-block;
+    padding-top: 20px;
+
+}
+
+.name h3 {
+    margin: 0;
+    font-size: 26px;
+    color: rgba(40, 49, 63, 1.00);
+    font-weight: 700;
+}
+
+.name h4 {
+    margin: 0;
+    font-size: 18px;
+    color: rgba(40, 49, 63, 1.00);
+    font-weight: 400;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    white-space: nowrap;
+    overflow: auto;
+    text-align: center;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.45);
+}
+
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.navbar-item {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.overview-section-2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview-section-2 .iconic {
+    margin: 10px;
+    display: inline-block;
+
+    width: 11%;
+    min-width: 95px;
+    aspect-ratio: 1 /0.8;
+    border-radius: 15px;
+
+    background-image: linear-gradient(rgb(250, 242, 217), rgb(190, 230, 244));
+}
+
+.iconic img {
+    padding: 5px 15px;
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.iconic span {
+    text-align: center;
+    width: 100%;
+    color: #49BCE2;
+}
+
+.doctor-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    float: right;
+    border-radius: 5px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: baseline;
+    padding: 10px;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.search-box select {
+    border-radius: 5px;
+    width: auto;
+    height: 100%;
+    margin: auto 1% auto 1%;
+}
+
+.search-box button {
+    height: 100%;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    color: white;
+}
+
+.search-box input {
+    height: 90%;
+    width: calc(98% - 180px);
+}
+
+
+.left-infor img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.doctor-card{
+    margin: 20px auto 0 auto;
+    width: 100%;
+    padding: 20px 10px 10px 10px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.doctor-card .doctor-infor{
+    width: calc(50% - 1px);
+    display: flex;
+    border-right: 1px rgb(238, 238, 238) solid ;
+}
+.left-infor{
+    height: 100%;
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left-infor a{
+    display: block;
+    color: rgb(69, 195, 210);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.right-infor{
+    display: inline-block;
+    width: calc(100% - 90px);
+    margin-left: 10px;
+}
+.right-infor h3{
+    margin:0;
+    font-weight: bold;
+    color: rgb(69, 195, 210);
+}
+
+.doctor-card .schedule-infor{
+    color: rgba(102,102,102,1.00);
+    width: calc(50% - 30px);
+    padding: 15px 0px 15px 15px;
+}
+.schedule-infor select{
+    color: rgb(51, 122, 183);
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-bottom: 1px black solid;
+}
+.schedule-infor h4{
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.schedule-infor button{
+    color: rgba(102,102,102,1.00);
+    margin-right: 8px;
+    background-color: rgb(238, 238, 238);
+    margin-top: 5px;
+    padding: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+}
+.schedules{
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px rgb(238, 238, 238) solid ;
+}
+.schedule-infor p{
+    margin: 0;
+    font-size: 14px;
+}
+h4 span{
+    font-weight: 500;
+    font-size: 14px;
+}
+h4 a{
+    font-weight: 600;
+    color: rgba(72,196,211,1.00);
+    font-size: 14px;
+}
+@media only screen and (max-width: 600px) {
+    .overview-section-1{
+        height: 300px;
+    }
+    .nameandavatar{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .doctor-card{
+        flex-flow: column;
+    }
+    .doctor-card .doctor-infor{
+        width: 100%;
+        border: none;
+    }
+    .doctor-card .schedule-infor{
+        width: 100%;
+    }
+  }

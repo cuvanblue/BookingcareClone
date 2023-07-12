@@ -1,0 +1,22 @@
+Hướng dẫn cài đặt sử dụng server:
+
+- mở file bookingcare bằng visualcode ( đã cài đặt composer, lavarel 10.x, PHP 8.2.4)
+- mở xampp chạy server apache + phpmyadmin và import file bookingcarever1.sql để backup dữ liệu
+- setup database trong file env ( tên database, cổng kết nối)
+- chạy lệnh php artisan serve để khởi động server
+- vào trang http://127.0.0.1:8000/ mặc định để hiển thị trang chủ ( cổng có thể thay đổi tùy theo config trong env)
+
+hướng dẫn dùng cho khách:
+- ở trang chủ có thể xem danh sách cơ sở y tế bằng cách chọn cơ sở y tế
+- ở mỗi cơ sở y tế có thể chọn từng cơ sở để xem chi tiết
+
+hướng dẫn dùng cho quản lý
+- chọn nút menu 3 gạch cạnh logo ở trang chủ -> lựa chọn dòng Dành Cho Bác Sĩ -> chuyển đến trang login http://127.0.0.1:8000/login
+- đăng nhập với tài khoản có role là Admin, Clinic, Doctor trang sẽ tự động phân quyền
+- Admin có thể thêm xóa sửa, tìm kiếm tất cả các bảng trừ admin bằng các nút chức năng 
+- Clinic có thế xem thêm xóa sửa tìm kiếm tất cả thông tin liên quan đến nó ( bác sĩ, lịch khám, lịch hẹn...)
+- Doctor chỉ có thể xem và sửa lịch hẹn 
+- để sửa các bản ghi => lựa chọn mục details tương ứng mỗi dòng
+- ảnh của admin, doctor hoặc clinic có thể tự động xóa khỏi database nếu thay đổi
+- do các bảng ràng buộc với nhau nên có một số trường chỉ có thể đọc không thể sửa
+- Lưu ý: trang web đã được nâng cáp thêm nhiều chức năng so với trang bookingcare nên sẽ có sự khác biệt về giao diện, chữ, chức năng ,...
